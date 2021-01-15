@@ -18,7 +18,6 @@ public class SimpleOval extends GeometricObject {
 	
 	public @Override boolean equals(Object that) {
 		return (that instanceof SimpleOval) && super.equals(that);
-	
 	}
 	
 }
