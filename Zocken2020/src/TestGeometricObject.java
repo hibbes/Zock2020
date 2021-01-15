@@ -14,6 +14,7 @@ public class TestGeometricObject {
 		System.out.println(o3.contains(new Vertex(10,3)));
 		System.out.println(o4);
 		
+	
 		
 	}
 
