@@ -1,4 +1,4 @@
-public class SimpleOval extends GeometricObject {
+public class SimpleOval extends geometricObject {
 
 	public SimpleOval(double w, double h, Vertex pos) {
 		this.width=w;
