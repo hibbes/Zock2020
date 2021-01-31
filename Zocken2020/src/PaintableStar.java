@@ -1,7 +1,7 @@
 import java.awt.Color;
 
 public class PaintableStar extends SimpleStar implements Paintable{
-	
+
 		public PaintableStar(Vertex pos, Color color){
 			super(pos, color);
 		}
