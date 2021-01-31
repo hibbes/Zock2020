@@ -1,9 +1,16 @@
+import java.awt.Color;
+
 public class SimpleOval extends geometricObject {
 
-	public SimpleOval(double w, double h, Vertex pos) {
+	public SimpleOval(double w, double h, Vertex pos, Color color) {
 		this.width=w;
 		this.height=h;
 		this.pos=pos;
+		this.color=color;
+	}
+	
+	public SimpleOval(double w, double h, Vertex pos) {
+		super(w,h,pos, new Color(0,0,0));
 	}
 	
 	public SimpleOval(double w, double h, double x, double y) {

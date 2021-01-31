@@ -1,7 +1,10 @@
+import java.awt.Color;
+
 public class geometricObject {
 	public Vertex pos;
 	public double width;
 	public double height;
+	public Color color;
 	static double defaultSize = 10;
 
 	public double getWidth() {
@@ -16,7 +19,7 @@ public class geometricObject {
 		return pos;
 	}
 
-	public geometricObject(double width, double height, Vertex pos) {
+	public geometricObject(double width, double height, Vertex pos, Color color) {
 
 		if (width < 0) {
 			width = -width;
@@ -33,6 +36,9 @@ public class geometricObject {
 		}
 
 	
+	public geometricObject(double width, double height, Vertex pos) {
+		this(width, height, pos, new Color(0, 0, 0));
+	}
 
 	public geometricObject(double width, double height) {
 		this(width, height, new Vertex(0, 0));
