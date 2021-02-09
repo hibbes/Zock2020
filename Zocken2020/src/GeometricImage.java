@@ -26,4 +26,12 @@ public class GeometricImage extends geometricObject implements Paintable {
 	public void paintTo(java.awt.Graphics g) {
 		icon.paintIcon(null, g, (int) pos.x, (int) pos.y);
 	}
+
+	public static void main(String[] args) {
+		GeometricImage gi = new GeometricImage("Test.png", 10, 10);
+		System.out.println(gi.width);
+		System.out.println(gi.height);
+		ShowInFrame.show(new PaintablePanel(gi));
+
+	}
 }
