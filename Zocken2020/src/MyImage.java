@@ -16,4 +16,5 @@ public class MyImage {
 		}
 		return img;
 	}
+	
 }
