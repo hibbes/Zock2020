@@ -4,7 +4,11 @@ class MovableImage extends GeometricImage implements GameObject {
 
 	Vertex deltaPos = new Vertex(0, 0);
 
-	public Vertex getDeltaPos() {return deltaPos;}
+	
+	public Vertex getDeltaPos() {
+		
+		return deltaPos;
+	}
 	
 	public void setDeltaPos(Vertex v) {
 		deltaPos = v;
@@ -53,9 +57,5 @@ class MovableImage extends GeometricImage implements GameObject {
 
 	}
 
-	@Override
-	public Vertex getDeltaPos(Vertex v) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 }

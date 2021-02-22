@@ -1,11 +1,12 @@
 interface GameObject extends Movable, Paintable {
+	
 	double getWidth();
 
 	double getHeight();
 
 	Vertex getPos();
 
-	Vertex getDeltaPos(Vertex v);
+	Vertex getDeltaPos();
 
 	boolean isLargerThan(GameObject that);
 
