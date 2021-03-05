@@ -3,11 +3,15 @@ import util.ShowInFrame;
 
 public class SimpleButton extends JPanel {
 
-	JButton b = new JButton("push this button");
+	JButton b1 = new JButton("increase");
+	JButton b2 = new JButton("decrease");
+	JButton b3 = new JButton("reset");
 	JLabel l = new JLabel("000");
 
 	SimpleButton() {
-		add(b);
+		add(b1);
+//		add(b2);
+	//	add(b3);
 		add(l);
 	}
 

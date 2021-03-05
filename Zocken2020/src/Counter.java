@@ -4,7 +4,10 @@ import util.ShowInFrame;
 public class Counter extends SimpleButton {
 
 	public Counter() {
-		b.addActionListener(new CountButtonListener(l));
+		b1.addActionListener(new CountButtonListener(l));
+	 //	b2.addActionListener(new DecrButtonListener(l));
+	//	b3.addActionListener(new ResetButtonListener(l));
+		
 	}
 
 	public static void main(String[] args) {
