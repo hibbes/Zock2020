@@ -6,7 +6,7 @@ public class SimpleButton extends JPanel{
 	  JButton d = new JButton("decrease");
 	  JButton r = new JButton("reset");
 	  static int counter = 0;
-	  JLabel  l = new JLabel(""+counter);
+	  JLabel  l = new JLabel("000"+counter);
 	  
 	  SimpleButton(){
 	    add(b);

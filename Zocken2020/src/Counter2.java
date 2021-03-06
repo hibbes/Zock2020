@@ -6,6 +6,8 @@ public class Counter2 extends SimpleButton{
 
     b.addActionListener(
     new ActionListener(){
+   
+    
       int i=0;
       public void actionPerformed(ActionEvent e){
         i=i+1;
