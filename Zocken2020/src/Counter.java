@@ -3,15 +3,12 @@ import util.ShowInFrame;
 
 public class Counter extends SimpleButton {
 
-	public Counter() {
-		b1.addActionListener(new CountButtonListener(l));
-	 //	b2.addActionListener(new DecrButtonListener(l));
-	//	b3.addActionListener(new ResetButtonListener(l));
-		
-	}
+	  public Counter(){
+		    b.addActionListener(new CountButtonListener(l,0));
+		    d.addActionListener(new CountButtonListener(l,1));
+		    r.addActionListener(new CountButtonListener(l,2));
+		  }
 
-	public static void main(String[] args) {
-		ShowInFrame.show(new Counter());
-	}
-
-}
+		  public static void main(String [] args){
+		    ShowInFrame.show(new Counter());}
+		}
