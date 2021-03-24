@@ -45,7 +45,7 @@ class MovableImage extends GeometricImage implements GameObject {
 		if (this.isAbove(that)) {
 			return false;
 		}
-		if (that.isLeftOf(this)) {
+		if (that.isAbove(this)) {
 			return false;
 		}
 		return true;
