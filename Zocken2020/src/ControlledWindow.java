@@ -7,14 +7,15 @@ public class ControlledWindow extends JFrame {
 	ControlledWindow(final SimpleAnimation p) {
 		this.p = p;
 		addWindowListener(new WindowAdapter() {
+			@Override
 			public void windowClosing(WindowEvent _) {
 				System.exit(0);
 			}
-
+			@Override
 			public void windowDeactivated(WindowEvent e) {
 				p.t.stop();
 			}
-
+			@Override
 			public void windowActivated(WindowEvent e) {
 				p.t.start();
 			};
