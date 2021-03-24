@@ -7,6 +7,8 @@ interface GameObject extends Movable, Paintable {
 	Vertex getPos();
 
 	Vertex getDeltaPos();
+	
+	void setDeltaPos(Vertex v);
 
 	boolean isLargerThan(GameObject that);
 
